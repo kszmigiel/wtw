@@ -4,9 +4,9 @@ import sys
 URL = 'http://api.openweathermap.org/data/2.5/weather'
 PARAMS = {
     'APPID': 'f0f8c83a56cf570b7402bbe407195551',
-    'units': 'metric'}
-
-PARAMS['q'] = sys.argv[1]
+    'units': 'metric',
+    'q': sys.argv[1],
+    }
 
 r = requests.get(url = URL, params = PARAMS)
 
